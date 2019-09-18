@@ -8,5 +8,5 @@ Villains Academy.
 ## How to use ##
 
 '''shell
-ruby directory.mb
+ruby directory.rb
 '''
