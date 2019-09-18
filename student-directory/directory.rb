@@ -23,9 +23,9 @@ def input_students
   # gets the first name
   name = gets.chomp
   # while the name is not empty repeat this code
-  while !name.empty? do
+  while !name.empty? do # while name isnt equal to a empty line
     #add the student hash to the array
-    students << {name: name, cohort: :november}
+    students << {name: name, cohort: :november}# sets cohort of students to novermber and sets the varible name to name
     puts "Now we have #{students.count} students"
     # get another name from the user
     name = gets.chomp
@@ -40,8 +40,10 @@ def print_header
 end
 
 def print(students)
+  temp = 0
   students.each do |student|
-    puts "#{student[:name]} (#{student[:cohort]} cohort)"
+    temp += 1
+    puts "#{temp}.#{student[:name]} (#{student[:cohort]} cohort)"# puts temp folowed by the student name then the student cohrt then the word cohort
   end
 end
 
